@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    padding: .3em;
+    height: 4em;
+    display: flex;
+}
+
+a {
+    color: #000000;
+    font-size: 1.0em;
+    transition: background-color .3s, color .3s;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #bbb;
+}
+
+
+html {
+    color: #FFFFFF;
+    /* set text color to white */
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/foodbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    flex: 2;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+
+}
+
+header nav ul li a {
+    padding: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    text-align: center
+}
+
+
+a {
+    padding: 0px 0px 0px 0px;
+    color: #FFFFFF;
+}
+
+p {
+    width: 10%;
+    max-width: 100px;
+}
+
+.foodlist {
+    text-align: center;
+}
+
+#fruitpic {
+    margin: 50px;
+    flex: 3;
+    flex-direction: column;
+
+}
+
+img {
+    padding: 1px 1px 0px 0px;
+}
+
+.hero-text {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+footer {
+    background-color: #000000;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top:auto
+    
+}
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav li {
+    list-style-type: none;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.quote {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 220px;
+    flex: 3;
+    font-size: 20px
+}
+
+form p {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+form select {
+    text-align: center
+}
+
+
+form label {
+    flex-basis: 33%;
+}
+
+form input, 
+form select, 
+textarea{
+    flex: 1;
+    margin: 10 1em;
+    border-radius: 5px;
+}
+
+form-button {
+    margin-right: 1em;
+}
+
+.radio-buttons {
+    margin-right: 15px
+}
+
+
+
+
+
+@media screen and (max-width:30rem) {
+    header,
+    header nav ul,
+    main,
+    footer,
+    form p {
+        flex-direction: column;
+    }
+    h1,
+    h2 {
+        font-size: 90%
+    }
